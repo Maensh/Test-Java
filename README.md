@@ -8,3 +8,9 @@ Many examples in Java for the exam
     add(int, int)
     add(int, int, int)
 ```
+### 2. Data type of parameters.
+
+```java
+    add(int, int)
+    add(int, float)
+````
