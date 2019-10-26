@@ -5,12 +5,12 @@ Many examples in Java for the exam
 ### 1. Number of parameters.
 
 ```java
-    add(int, int)
-    add(int, int, int)
+add(int, int)
+add(int, int, int)
 ```
 ### 2. Data type of parameters.
 
 ```java
-    add(int, int)
-    add(int, float)
+add(int, int)
+add(int, float)
 ````
