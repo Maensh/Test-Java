@@ -5,6 +5,7 @@
  */
 package testjava;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -99,7 +100,17 @@ public class TestJava {
         grd1.determineClassAverage();
         System.out.println();
         System.out.println(grd1.displayMessage());*/
-
+        
+        // Getting Random numbers
+        /*Random randomNumber = new Random();
+        int face;
+        for (int counter =1; counter<=20; counter++){
+            face = 1 + randomNumber.nextInt(6);
+            
+            System.out.printf("%d ", face);
+            if (counter % 5 == 0)
+                System.out.println();
+        }*/
         
     }
     
