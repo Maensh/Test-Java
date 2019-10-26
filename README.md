@@ -28,3 +28,15 @@ When I say argument list, I am not talking about return type of the method, for 
 int add(int, int)
 float add(int, int)
 ```
+
+# Static Değişkenler
+
+```java
+classStudent{
+introllno;
+Stringname;
+Stringcollege="ITS";
+}
+```
+
+Suppose there are 500 students in my college, now all instance data members will get memory each time when the object is created. All students have its unique rollnoand name, so instance data member is good in such case. Here, "college" refers to the common property of all objects. If we make it static, this field will get the memory only once.
