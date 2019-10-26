@@ -154,7 +154,7 @@ public class TestJava {
     // field that is accessible to all methods of this class
     //static int x = 1;  
     
-    int x=6;
+    /*int x=6;
     public TestJava(){
         System.out.print("Hello ");
     }
@@ -162,12 +162,12 @@ public class TestJava {
         this();
         int x=9;
         System.out.print("x:"+this.x);
-    }
+    }*/
     
     public static void main(String[] args) {
         // TODO code application logic here
         
-        TestJava a = new TestJava(3);
+        //TestJava a = new TestJava(3);       
         
         //for class A and B1
         /*A a = new A(5);
