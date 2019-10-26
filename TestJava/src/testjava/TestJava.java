@@ -18,7 +18,7 @@ public class TestJava {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner input = new Scanner(System.in);
+        /*Scanner input = new Scanner(System.in);
         int number1;
         int number2;
         System.out.print("Enter number 1 : ");       
@@ -29,7 +29,18 @@ public class TestJava {
         if (number1 == number2)
             System.err.printf("%d == %d\n", number1, number2);
         if (number1 != number2)
-            System.err.printf("%d != %d\n", number1, number2);
+            System.err.printf("%d != %d\n", number1, number2);*/
+        
+        int c;
+        c = 5;
+        System.out.println(c);
+        System.out.println(c++);
+        System.out.println(c);        
+        c = 5;
+        System.out.println(c);
+        System.out.println(++c);
+        System.out.println(c);   
+        
     }
     
 }
