@@ -58,17 +58,131 @@ class GradeBook
     }
 }
 
+class deneme{
+    public static int kare(int x){
+      return x*x;
+    }
+}
+
+// An exam question
+class Base {
+    int a = 1;
+    void foo (){System.out.println("Base's print "+a);}
+}
+class Derived extends Base{
+    int a = 2;
+    @Override
+    void foo(){
+        //super.foo();
+        System.out.println("Derived's print "+a);
+    }
+}
+class Derived2 extends Derived{
+    int a = 3;
+    @Override
+    void foo(){
+        //super.foo();
+        System.out.println("Derived2's print "+a);
+        super.foo();
+    }
+}
+
+class Test{
+    int a;
+    int b;
+    Test(int i, int j){
+        a=i;
+        b=j;
+    }
+    void meth(Test o){
+        o.a *= 2;
+        o.b /= 2;
+    }
+}
+
+// A nice question
+class A{
+    int xA=2;
+    A(int i, int j){
+        System.out.println("l:"+i+"ve"+j);
+    }
+    A(int i){
+        this();
+        System.out.println("2:"+i);
+    }
+    A(){
+        System.out.println("3");
+        this.metodA();
+    }
+    void metodA(){
+        System.out.println("4:"+xA);
+    }
+}
+class B1 extends A{
+    int xB=12;
+    B1(int m, int n){
+        this(m,n,10);
+        System.out.println("5:"+m+" ve "+n);
+    }
+    B1(int m){
+        super(m);
+        System.out.println("6:"+m);
+    }
+    B1(int m, int n, int k){
+        super();
+        System.out.println("7:"+m+" "+n+" ve"+k);        
+    }
+    @Override
+    void metodA(){
+        System.out.println("8:"+super.xA);
+        super.metodA();
+    }
+}
+
+
 public class TestJava {
 
     /**
      * @param args the command line arguments
      */
     
+    
+    /*static  String name = "cat";
+    void TestJava(){
+        name = "dog";
+    }*/        
     // field that is accessible to all methods of this class
-    //static int x = 1;
+    //static int x = 1;  
+    
+    int x=6;
+    public TestJava(){
+        System.out.print("Hello ");
+    }
+    public TestJava(int y){
+        this();
+        int x=9;
+        System.out.print("x:"+this.x);
+    }
     
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        TestJava a = new TestJava(3);
+        
+        //for class A and B1
+        /*A a = new A(5);
+        System.out.println("a yaratildi");
+        B1 b = new B1(1, 2);
+        System.out.println("b yaratildi");
+        b.metodA();*/
+                
+        //method();
+        
+        // Test Class
+        /*Test obj = new Test(10, 20);
+        obj.meth(obj);
+        System.out.println(obj.a+" "+obj.b);*/
+        
         /*Scanner input = new Scanner(System.in);
         int number1;
         int number2;
@@ -124,9 +238,32 @@ public class TestJava {
         useField(); // useField uses class Scope's field x
 
         System.out.printf("%nlocal x in main is %d%n", x);*/
-
+        
+        // Try static method
+        //System.out.println("Square of 5 = " + deneme.kare(5));
+        
+        /*Derived2 derived2 = new Derived2();
+        derived2.foo();*/
+        
+        // Which ones have error
+        /*float[] f = new float(3);  //error
+        float f2[] = new float[ ]; //error
+        float[]f1 = new float[3];
+        float f3[] = new float[3];
+        float f5[] = {1.0f, 2.0f, 2.0f};*/
+        
+        
     }
     
+    // void to Constructor is a ne method not a constructor
+    /*public static void method(){
+        TestJava animal = new TestJava();
+        System.out.println("Pet "+animal.name);        
+        animal.TestJava();
+        System.out.println("Pet "+animal.name);
+    }*/
+    
+    /*
     // create and initialize local variable x during each call
     public static void useLocalVariable() {
         int x = 25; // initialized each time useLocalVariable is called
@@ -144,5 +281,5 @@ public class TestJava {
         x *= 10; // modifies class Scope's field x
         System.out.printf("field x before exiting method useField is %d%n", x);
     }
-    
+    */
 }
