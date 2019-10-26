@@ -1,2 +1,2 @@
 # Test-Java
-many Examples in Java for the exam
+Many examples in Java for the exam
