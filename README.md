@@ -32,10 +32,10 @@ float add(int, int)
 # Static Değişkenler
 
 ```java
-classStudent{
-introllno;
-Stringname;
-Stringcollege="ITS";
+class Student{
+int rollno;
+String name;
+String college="ITS";
 }
 ```
 
