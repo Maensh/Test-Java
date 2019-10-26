@@ -29,7 +29,7 @@ int add(int, int)
 float add(int, int)
 ```
 
-# Static Değişkenler
+## Static Değişkenler
 
 ```java
 class Student{
@@ -40,3 +40,9 @@ String college="ITS";
 ```
 
 Suppose there are 500 students in my college, now all instance data members will get memory each time when the object is created. All students have its unique rollnoand name, so instance data member is good in such case. Here, "college" refers to the common property of all objects. If we make it static, this field will get the memory only once.
+<br />
+
+## Static Metodlar
+1. A static method belongs to the class rather thanobjectof a class.
+2. A static method invoked without the need for creating an instance of a class.
+3. static method can access static data member and can change the value of it.
