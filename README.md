@@ -47,7 +47,8 @@ Suppose there are 500 students in my college, now all instance data members will
 2. A static method invoked without the need for creating an instance of a class.
 3. static method can access static data member and can change the value of it.
 <br />
-## An important example
+
+### An important example
 
 ```java
 class B{
@@ -56,7 +57,8 @@ class B{
         metodB();
         System.out.println("B nin constr. calisti");}
     void metodB(){
-        System.out.println("metodB:"+xB); }
+        System.out.println("metodB:"+xB); 
+    }
 }
 class C extends B {
     int xC=1;
@@ -71,7 +73,8 @@ class C extends B {
     void metodB() {
        super.metodB();
        System.out.println("C sınıfındaki metodB:"+super.xB);
-} }
+    }
+}
 public class Test{
     public static void main(String args[]) {
         B b=new B();
@@ -82,4 +85,20 @@ public class Test{
         c.metodB();
     }
 }
+```
+
+### OUTPUT
+
+```
+metodB:10
+B nin constr. calisti
+metodB:10
+C sınıfındaki metodB:10
+B nin constr. calisti
+C nin constr. calisti
+10
+metodB:10
+4
+metodB:10
+C sınıfındaki metodB:10
 ```
