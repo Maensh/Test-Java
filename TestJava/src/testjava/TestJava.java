@@ -170,11 +170,11 @@ public class TestJava {
         //TestJava a = new TestJava(3);       
         
         //for class A and B1
-        /*A a = new A(5);
+        A a = new A(5);
         System.out.println("a yaratildi");
         B1 b = new B1(1, 2);
         System.out.println("b yaratildi");
-        b.metodA();*/
+        b.metodA();
                 
         //method();
         
