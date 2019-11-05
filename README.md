@@ -46,3 +46,59 @@ Suppose there are 500 students in my college, now all instance data members will
 1. A static method belongs to the class rather thanobjectof a class.
 2. A static method invoked without the need for creating an instance of a class.
 3. static method can access static data member and can change the value of it.
+<br />
+
+### An important example
+
+```java
+class B{
+    int xB=10;
+    B(){
+        metodB();
+        System.out.println("B nin constr. calisti");}
+    void metodB(){
+        System.out.println("metodB:"+xB); 
+    }
+}
+class C extends B {
+    int xC=1;
+    int xB=4;
+    C() {
+       System.out.println("C nin constr. calisti");
+    }
+    void metodC(){
+       System.out.println("metodC");
+    }
+    @Override
+    void metodB() {
+       super.metodB();
+       System.out.println("C sınıfındaki metodB:"+super.xB);
+    }
+}
+public class Test{
+    public static void main(String args[]) {
+        B b=new B();
+        C c=new C();
+        System.out.println(b.xB);
+        b.metodB();
+        System.out.println(c.xB);
+        c.metodB();
+    }
+}
+```
+
+### OUTPUT
+
+```
+metodB:10
+B nin constr. calisti
+metodB:10
+C sınıfındaki metodB:10
+B nin constr. calisti
+C nin constr. calisti
+10
+metodB:10
+4
+metodB:10
+C sınıfındaki metodB:10
+```
