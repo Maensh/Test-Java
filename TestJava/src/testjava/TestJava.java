@@ -163,18 +163,24 @@ public class TestJava {
         int x=9;
         System.out.print("x:"+this.x);
     }*/
-    
+    static int s;
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        // from exams
+        System.out.println(s);
+        TestJava p = new TestJava();
+        p.start();
+        System.out.println(s);
         
         //TestJava a = new TestJava(3);       
         
         //for class A and B1
-        A a = new A(5);
+        /*A a = new A(5);
         System.out.println("a yaratildi");
         B1 b = new B1(1, 2);
         System.out.println("b yaratildi");
-        b.metodA();
+        b.metodA();*/
                 
         //method();
         
@@ -255,6 +261,15 @@ public class TestJava {
         
     }
     
+    void start(){
+        int x = 7;
+        twice(x);
+        System.out.print(x + " ");
+    }
+    void twice(int x){
+        x = x*2;
+        s = x;
+    }
     // void to Constructor is a ne method not a constructor
     /*public static void method(){
         TestJava animal = new TestJava();
