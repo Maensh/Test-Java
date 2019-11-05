@@ -168,6 +168,32 @@ public class TestJava {
         // TODO code application logic here
         
         // from exams
+        //int x = 100;
+        //int y = 100;
+        //boolean b = (x=y);
+        
+        float f = 1.3f;
+        
+        
+        int a=3;
+        int b=4;
+        System.out.print(" " + 7 + 2 + " ");
+        System.out.print(a+b);
+        System.out.print(" " + a + b + " ");
+        
+        System.out.println();
+        int y=0;
+        int x=0;
+        for (int z=0; z<5; z++){
+            if ((++x>2) && (++y>2)){x++;}
+        }
+        System.out.println(x+" "+y);
+        
+        //int a [][] = new int [3][];
+       // a[1] = new int []{1,2,3};
+       // a[2] = new int []{4,5};
+        //System.out.println(a[1][1]);
+        
         System.out.println(s);
         TestJava p = new TestJava();
         p.start();
